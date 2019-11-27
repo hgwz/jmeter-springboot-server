@@ -2,6 +2,7 @@
 jmeter-springboot-server
 
 Setup Mysql
+
 docker pull mysql:5.7
 mkdir -p ~/mysql/{data,logs}
 docker run -d --name mysql \
@@ -24,4 +25,5 @@ CREATE TABLE `city` (
 CREATE INDEX index_name ON city (province_id)
 
 Setup Redis
+
 docker run -d --name redis -p 6379:6379 redis
